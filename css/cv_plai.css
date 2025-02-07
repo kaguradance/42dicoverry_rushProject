@@ -15,8 +15,8 @@ nav {
     height: 80px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 4px solid rgb(200, 200, 200); /* เปลี่ยนขอบเป็นสีเทาอ่อน */
-    background-color: rgb(50, 50, 50); /* กำหนดพื้นหลังของ navigation เป็นสีเทาเข้ม */
+    border-bottom: 4px solid rgb(200, 200, 200); 
+    background-color: rgb(50, 50, 50);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
@@ -26,7 +26,7 @@ nav {
     align-items: center;
     padding-left: 100px;
     font-size: 20px;
-    color: #dcdcdc; /* สีเทาอ่อนสำหรับตัวอักษร */
+    color: #dcdcdc; 
 }
 
 .nav_menu {
@@ -43,7 +43,7 @@ nav {
 }
 
 .nav_menu li a {
-    color: #dcdcdc; /* สีเทาอ่อนสำหรับลิงค์ */
+    color: #dcdcdc;
     text-decoration: none;
 }
 
@@ -56,8 +56,8 @@ nav {
     padding-top: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: rgb(240, 240, 240); /* พื้นหลังโทนเทาอ่อน */
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
 }
 
 .about img {
@@ -66,6 +66,11 @@ nav {
     height: auto;
     border-radius: 10%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.about img:hover {
+    transform: scale(1.1);
 }
 
 .data {
@@ -75,17 +80,23 @@ nav {
 }
 
 .data h1 {
-    border-bottom: 3px solid rgb(200, 200, 200); /* ขอบสีเทา */
+    border-bottom: 3px solid rgb(200, 200, 200);
 }
 
 .data h1, h2 {
     padding-bottom: 10px;
-    color: #333; /* สีข้อความเทาเข้ม */
+    color: #333;
+}
+
+.data p {
+    padding-bottom: 5px;
+    color: #333;
 }
 
 .data li {
     padding-left: 20px;
     list-style: none;
+    color: #333;
 }
 
 .show_case {
@@ -93,29 +104,30 @@ nav {
     justify-content: space-between;
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
     padding: 4rem 100px;
-    background-color: rgb(245, 245, 245); /* พื้นหลังสีเทาอ่อน */
+    background-color: rgb(245, 245, 245);
 }
 
 .show_case h1 {
     margin: 3rem;
     text-align: center;
-    color: #333; /* สีข้อความเทาเข้ม */
+    color: #333;
 }
 
 .certificate, .project {
     width: 50%;
     display: flex;
     flex-direction: column;
+    color: #333;
 }
 
 .certificate {
     margin: 0 0 2rem 0;
-    border-right: 2px solid rgb(200, 200, 200); /* ขอบสีเทา */
+    border-right: 2px solid rgb(200, 200, 200);
 }
 
 .project {
     margin: 0 0 2rem 0;
-    border-left: 2px solid rgb(200, 200, 200); /* ขอบสีเทา */
+    border-left: 2px solid rgb(200, 200, 200);
 }
 
 .show_case_pic {
@@ -133,32 +145,38 @@ nav {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    background-color: rgb(250, 250, 250); /* สีพื้นหลังของแต่ละ item */
-}
-
-.item:hover {
-    transform: scale(1.4);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(250, 250, 250);
 }
 
 .item p {
+    color: #333;
     margin: 1rem;
     font-size: 16px;
     text-align: center;
-    color: rgb(60, 60, 60); /* สีข้อความเทาเข้ม */
+    color: rgb(60, 60, 60);
     padding: 5px;
+}
+
+.item p a{
+    color: #333;
 }
 
 .item img {
     width: 300px;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
+}
+
+.item:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 .contract {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem;
 }
 
 .contract_pic {
@@ -176,13 +194,14 @@ nav {
 
 .contract_pic a img {
     margin: 0.5rem;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    filter: grayscale(20%); /* ทำให้ภาพเป็นสีเทา */
+    filter: grayscale(20%);
+    transition: transform 0.2s ease;
 }
 
 .contract_pic a:hover img {
-    filter: grayscale(0%); /* กลับเป็นสีปกติเมื่อ hover */
+    filter: grayscale(0%);
     transform: scale(1.4);
 }
