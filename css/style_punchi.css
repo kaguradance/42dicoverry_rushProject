@@ -11,9 +11,9 @@ nav {
     padding: 10px;
     background-color: #c0c78c;
     color: #fef9e0;
-    position: sticky;  /* ทำให้ navbar อยู่ติดกับขอบบน */
-    top: 0;  /* กำหนดให้อยู่ที่ด้านบนสุด */
-    z-index: 1000;  /* เพิ่มค่า z-index เพื่อให้ navbar อยู่เหนือเนื้อหาอื่น */
+    position: sticky; 
+    top: 0;  
+    z-index: 1000;  
 }
 
 
@@ -134,11 +134,11 @@ a:focus, a:hover {
     width: 120px;
     height: 120px;
     margin: 5px;
-    transition: transform 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงขนาด */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .h-box:hover {
-    transform: scale(1.2); /* ขยายขนาด 20% เมื่อ hover */
+    transform: scale(1.2); 
 }
 
 .h-box p {
@@ -161,10 +161,10 @@ a:focus, a:hover {
 
 .skills-box {
     display: flex; 
-    flex-direction: row;  /* ให้เรียงเป็นแถว (row) */
+    flex-direction: row;  
     justify-content: center; 
-    align-items: flex-start; /* ให้แต่ละ column เริ่มจากด้านบนสุด */
-    gap: 40px; /* ระยะห่างระหว่าง column */
+    align-items: flex-start; 
+    gap: 40px; 
 }
 
 .skills {
@@ -190,23 +190,8 @@ a:focus, a:hover {
 .skills li {
     color: #b99470;
     padding: 3px;
-    display: block;
-    position: relative; /* ตั้งค่าให้สามารถใช้ pseudo-element */
-    padding-left: 15px; /* เพิ่มระยะห่างด้านซ้ายเพื่อให้วงกลมไม่ชนกับข้อความ */
+    display: block; 
 }
-
-.skills li::before {
-    content: ""; /* ไม่ต้องการข้อความ */
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%); /* ทำให้วงกลมอยู่กลางบรรทัด */
-    width: 5px; /* ขนาดของวงกลม */
-    height: 5px; /* ขนาดของวงกลม */
-    border-radius: 50%; /* ทำให้เป็นวงกลม */
-    background-color: #b99470; /* สีของวงกลม */
-}
-
 
 .skills-box img {
     width: 500px;
@@ -215,20 +200,31 @@ a:focus, a:hover {
     object-fit: cover;
 }
 
-.s-title {
-    font-family: 'Nunito';
-    font-weight: bolder;
-    position: relative;
-    text-align: left;
-    margin-top: 40px;
-    margin-left: 150px;
-    font-size: 50px;
+.skills li {
     color: #b99470;
+    padding: 3px;
+    display: block;
+    position: relative; 
+    padding-left: 15px; 
 }
+
+.skills li::before {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px; 
+    height: 5px; 
+    border-radius: 50%;
+    background-color: #b99470; 
+}
+
+
 
 .projects-box {
     display: flex;
-    flex-wrap: wrap; /* ให้โปรเจคเรียงแบบหลายคอลัมน์ */
+    flex-wrap: wrap; 
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
@@ -238,15 +234,15 @@ a:focus, a:hover {
     width: 300px;
     background-color: #ffffff;
     border-radius: 15px;
-    overflow: hidden; /* ซ่อนส่วนเกินของภาพ */
+    overflow: hidden; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     background-color: #f6f4ea;
-    transition: transform 0.3s ease-in-out; /* เพิ่มการเปลี่ยนแปลงขนาด */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .project:hover {
-    transform: scale(1.1); /* ขยายขนาด 10% เมื่อ hover */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* เพิ่มเงาเมื่อ hover */
+    transform: scale(1.1); 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); 
 }
 
 .project img {
