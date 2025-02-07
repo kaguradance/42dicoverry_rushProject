@@ -305,3 +305,6 @@ a:focus, a:hover {
     margin-right: auto;  
 }
 
+html {
+    scroll-behavior: smooth;
+}

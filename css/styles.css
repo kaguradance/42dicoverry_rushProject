@@ -1,15 +1,13 @@
-/* เพิ่มการตั้งค่าพื้นหลัง */
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/9bc27292880429.5e569ff84e4d0.gif') no-repeat center center fixed;
+    background: url('https://cdnb.artstation.com/p/assets/images/images/015/677/407/original/bogdan-mb0sco-school-class-class-animated.gif?1549221195') no-repeat center center fixed;
     background-size: cover;
     animation: gradientAnimation 10s ease infinite;
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Nunito";
 }
 
-/* แอนิเมชั่นการเคลื่อนที่ของพื้นหลัง */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -36,7 +34,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     z-index: 10;
-    margin-top: 0; /* ลดระยะห่างจากด้านบน */
+    margin-top: 0; 
 }
 
 
@@ -88,7 +86,6 @@ h1 {
 }
 
 
-/* การเพิ่มแอนิเมชั่นให้การ์ด */
 .card-container .card {
     position: relative;
     overflow: hidden;
